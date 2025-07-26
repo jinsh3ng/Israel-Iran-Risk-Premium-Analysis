@@ -50,5 +50,6 @@ def analyze_and_plot(ticker, period):
         axs[i].xaxis.set_major_locator(plt.MaxNLocator(4))
         axs[i].grid(True)
         axs[i].set_title(f"{event_name}\nR² = {r2:.3f}  |  Slope = {slope:.2f}  |  RMSE = {rmse:.2f}", fontsize=10)
+    plt.show()
         
     return commodity_df,fig
