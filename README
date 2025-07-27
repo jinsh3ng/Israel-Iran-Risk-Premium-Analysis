@@ -1,0 +1,46 @@
+# Analyzing Risk Premium During Conflict Events
+
+## Overview
+
+Intuitively, we know that **risk premiums tend to increase during crises**, particularly during wartime, as uncertainty leads investors to demand higher returns. However, we aim to explore this relationship in greater depth. Specifically, we analyze how risk premiums behave **before**, **during**, and **after** the following key conflict-related events:
+
+- **Israel attacks Iran** — *2025-06-13*
+- **USA attacks Iran** — *2025-06-22*
+- **Ceasefire** — *2025-06-24*
+
+To conduct this analysis, we focus on **natural gas** and **crude oil**, as they are highly sensitive to geopolitical developments, particularly in the Middle East—a region critical to global energy supply.
+
+For natural gas, we select TTF=F, and for crude oil, BZ=F. We extract their price data using the yfinance library.
+
+## Research Questions
+
+1. Do risk premiums spike immediately after attacks, or are they priced in beforehand due to market efficiency?
+2. Do risk premiums vary depending on the conflict type? Which conflicts cause larger increases in risk premiums?
+
+## Key Findings
+
+### Israel Attack (June 13)
+Both TTF and BZ=F show positive risk premiums that increase over four trading days before declining prior to the US attack. This pattern suggests that after the initial fear spike, traders realized the conflict wasn't escalating to levels that would severely disrupt global energy markets.
+
+### US Attack (June 22)
+Counterintuitively, both gas and oil risk premiums turned negative. This massive underpricing indicates that traders believed Iran would not retaliate and would likely agree to a ceasefire soon, given its nuclear capabilities were destroyed. The market demonstrates efficiency here, as investors correctly anticipated the war's end—which indeed occurred two days later.
+
+### Ceasefire (June 24)
+Both TTF and BZ=F show steadily decreasing risk premiums over time, reflecting the market's unwinding of geopolitical risk as uncertainty resolved.
+
+## Conclusions
+
+1. **Risk premiums do not spike immediately**—they build over several days, indicating imperfect market efficiency in processing geopolitical information.
+2. **Conflict type matters significantly**—initial attacks create positive premiums, while escalation can paradoxically create negative premiums when markets anticipate resolution.
+
+## Usage
+
+```python
+from src.analyze_conflict import analyze_and_plot, summarize_risk_premium, events
+
+# Analyze energy commodities
+tickers = ["BZ=F", "TTF=F"]
+for ticker in tickers:
+   df, fig, fig_risk = analyze_and_plot(ticker, 21)
+   stats = summarize_risk_premium(df, events)
+   print(f"\nSummary Stats for {ticker}:\n", stats.to_string(index=False))
