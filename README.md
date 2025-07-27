@@ -39,7 +39,7 @@ The market appears to have acted **efficiently** here, in line with the market h
 - **BZ=F:** -9.69 USD average premium  
 
 ---
-
+   
 ### 🕊️**Ceasefire (June 24)**  
 Both TTF and BZ=F exhibited steadily decreasing risk premiums following the ceasefire announcement.  
 This is expected, as investor sentiment improved and geopolitical uncertainty **receded**.
@@ -54,3 +54,22 @@ This is expected, as investor sentiment improved and geopolitical uncertainty **
 The **type and perceived escalation** of conflict significantly influence risk premiums. Initial attacks tend to increase premiums as uncertainty spikes, but escalations can lead to declines when markets efficiently anticipate a resolution and price in the expected outcome early. This highlights the role of market efficiency in rapidly incorporating new information during geopolitical events.
 
 --- 
+## Setup Instructions
+
+1. In the /Israel-Iran-Risk-Premium-Analysis directory, create a Python virtual environment and activate it:
+   ```bash
+   python -m venv .venv
+   .venv\Scripts\activate # The .venv activation command might differ depending on your operating system
+
+2. Install the required packages
+   ```bash
+   pip install -r requirements.txt
+
+
+3. Run this code in `main.ipynb`:
+   
+   ```bash
+   from src.analyze_conflict import analyze_and_plot
+   tickers = ["BZ=F", "TTF=F"]
+   for i in tickers:
+       df, fig = analyze_and_plot(i, 21)
