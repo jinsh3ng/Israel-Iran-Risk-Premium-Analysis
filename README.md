@@ -6,7 +6,7 @@ Risk premiums typically increase during crises, especially wartime, as uncertain
 - **USA attacks Iran** — *2025-06-22*  
 - **Ceasefire announced** — *2025-06-24*  
 
-To conduct this analysis, we focus on **natural gas** and **crude oil**, as they are highly sensitive to geopolitical developments, particularly in the Middle East—a region critical to global energy supply.
+To conduct this analysis, we focus on **natural gas** and **crude oil** futures, as they are highly sensitive to geopolitical developments, particularly in the Middle East—a region critical to global energy supply.
 
 For natural gas, we selected **TTF=F**, and for crude oil, **BZ=F**. Price data was extracted using the `yfinance` library.
 
