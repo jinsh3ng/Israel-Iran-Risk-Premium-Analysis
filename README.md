@@ -30,7 +30,8 @@ This drop likely reflects how, after the initial fear spike, traders realized th
 
 ### ⚔️**US Attack (June 22)**  
 For gas, the risk premium turned negative—an unexpected outcome. BZ=F also showed a negative premium.  
-This significant underpricing suggests that traders probably believed Iran would not retaliate and would likely agree to a ceasefire, especially given the destruction of its nuclear plants by the bunker buster bomb.  
+This significant underpricing suggests that traders probably believed Iran would not retaliate and would likely agree to a ceasefire, especially given the destruction of its nuclear plants by the bunker buster bomb. 
+
 The market appears to have acted **efficiently** here, in line with the market hypothesis theory, as investors correctly anticipated a quick resolution to the conflict, which did occur shortly after.
 
 **Risk Premium Summary:**  
@@ -50,6 +51,6 @@ This is expected, as investor sentiment improved and geopolitical uncertainty **
 ---
 
 ## Conclusions
-The **type and perceived escalation** of conflict significantly influence risk premiums. Initial attacks tend to increase premiums, but escalations can lead to declines when markets anticipate resolution.
+The **type and perceived escalation** of conflict significantly influence risk premiums. Initial attacks tend to increase premiums as uncertainty spikes, but escalations can lead to declines when markets efficiently anticipate a resolution and price in the expected outcome early. This highlights the role of market efficiency in rapidly incorporating new information during geopolitical events.
 
 --- 
